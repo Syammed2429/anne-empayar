@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Center, Text, Box, Flex, Container } from "@chakra-ui/react";
+import { Link, Text, Box, Flex, Container } from "@chakra-ui/react";
 import { FaFacebook } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 
@@ -12,8 +12,18 @@ const Connect: FC = () => {
         </Box>
         <Box>
           <Flex gap={15}>
-            <FaFacebook color="blue" fontSize="45" />
-            <BsYoutube color="red" fontSize="45" />
+            <Link
+              href="https://www.facebook.com/noorsyahierah.haninie"
+              isExternal
+            >
+              <FaFacebook color="blue" fontSize="45" />
+            </Link>
+            <Link
+              href="https://www.youtube.com/channel/UCI2UMkl0T-IIZT0iFKyy6Tg"
+              isExternal
+            >
+              <BsYoutube color="red" fontSize="45" />
+            </Link>
           </Flex>
         </Box>
       </Container>
